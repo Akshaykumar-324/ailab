@@ -1,22 +1,22 @@
-from Jys'
-weer 6
-Travelling Sales
-tman problem
-man sie
-fsom iterteols , mport peemutahns
-V4
-del Asp (graph S) :
-Verten []
-fr? in Tange (v) :
-Verten .append 6)
-min__cast manse
-nentpem utalion -permutatHn (erten)
-unrent cost =0
-k=s
-carent cat 4-graph lUI
-(arrent_cot ¢<graph[J1
-nin cat zmm (min cart ,caredcort)
-delum mincas!
-gaph Lo, lo, 15 2o3,Tw, o, 35 ,25 .lis. 35,0,34
-Tlo,25130 ,o3]
-G Reply
+from sys import mansize 
+from itertools, import permutations
+V= 4
+def tsp (graph , s) :
+verter = []
+tor ; in range (V) :
+if i ! =S:
+Verten . append (i)
+min_ cast = mansize
+nent-permutalion = permutatio (verten)
+for i in nent_ permutation:
+current _ cost = 0
+K=5
+for jini :
+cument-cost 7 = graph [K] [J]
+K=］
+carrent _cost 7=graph [k][s]
+min_cast = mm (min_cart, cament _ cort)
+refum min_cart
+graph = [ [0, 10,15, 20], [10, 0,35, 25], [15, 35,0130]
+[20,25,30,03]
+Print (tsp (graph , s)
