@@ -1,22 +1,22 @@
-from sys import mansize 
-from itertools, import permutations
+from sys import maxsize 
+from itertools import permutations
 V= 4
 def tsp (graph , s) :
-verter = []
-tor ; in range (V) :
-if i ! =S:
-Verten . append (i)
-min_ cast = mansize
-nent-permutalion = permutatio (verten)
-for i in nent_ permutation:
-current _ cost = 0
-K=5
-for jini :
-cument-cost 7 = graph [K] [J]
-K=］
-carrent _cost 7=graph [k][s]
-min_cast = mm (min_cart, cament _ cort)
-refum min_cart
-graph = [ [0, 10,15, 20], [10, 0,35, 25], [15, 35,0130]
-[20,25,30,03]
-Print (tsp (graph , s)
+   vertex = []
+   for i in range (V) :
+      if i !=s:
+        vertex.append(i)
+   min_cost = maxsize
+   next_permutation =permutations(vertex)
+   for i in next_permutation:
+     current_cost = 0
+     k=s
+     for j in i:
+       current_cost += graph[k][j]
+       k=j
+     current_cost +=graph[k][s]
+     min_cost = min(min_cost,current_cost)
+   return min_cost
+graph = [[0,10,15,20], [10,0,35,25], [15,35,0,30],[20,25,30,0]]
+s=0
+print(tsp (graph , s))
